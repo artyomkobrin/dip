@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/text_whence"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="@string/text_whence"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLength="100"/>
+
+
+        <EditText
+            android:id="@+id/text_where"
+            android:layout_below="@+id/text_whence"
+            android:hint="@string/text_where"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLength="100"/>
+
+        <ImageButton
+            android:id="@+id/img_but2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_where"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <ImageButton
+            android:id="@+id/img_but1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_where"
+            android:layout_toLeftOf="@+id/img_but2"/>
+
+        <ImageButton
+            android:id="@+id/img_but3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_where"
+            android:layout_toRightOf="@+id/img_but2"/>
+
+        <EditText
+            android:id="@+id/text_waypoints"
+            android:hint="@string/text_waypoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_but2"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLength="100"/>
+
+         <Button
+            android:id="@+id/directions_btn"
+            android:text="get directions"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_waypoints"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

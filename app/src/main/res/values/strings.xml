@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tourism</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="text_whence">whence...</string>
+    <string name="text_where">where...</string>
+    <string name="text_waypoints">waypoints</string>
+</resources>
